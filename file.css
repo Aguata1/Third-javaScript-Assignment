@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+.header-logo {
+    width: 100px; 
+    height: auto;
+}
+
+/* Styles for main content */
+main {
+    padding: 20px;
+}
+
+/* Trending Movies Section */
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movies-grid div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+.movies-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Watchlist Section */
+#watchlist div {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Search Suggestions */
+#search-suggestions ul {
+    list-style-type: none;
+}
+
+#search-suggestions li {
+    background-color: #eee;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .movies-grid {
+        flex-direction: column;
+    }
+
+    .header-logo {
+        width: 70px; 
+    }
+}
